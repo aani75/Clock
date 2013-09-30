@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Clock</title>
+
+   
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Cordova -->
+    <script src="/js/cordova.js"></script>
+
+    <!-- jquery references -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Clock references -->
+    <link href="/css/clock.css" rel="stylesheet" type="text/css" />
+    <script src="/js/clock.js"></script>
+
+    <!-- default references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        console.log("Subscribing...");
+        document.addEventListener("deviceready", function () {
+
+            //navigator.notification.alert("The device is ready!");
+            canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+
+            // var width = canvas.width;
+            // var height = canvas.height;
+
+            clockImage = new Image();
+            clockImage.src = '/images/cface.png';
+
+            setInterval(drawScene, 1000); // loop drawScene
+        });
+
+        
+
+    </script>
+
+    <div class="clocks">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+
+    <script type="text/javascript">
+       
+        </script>
+        </body>
+        </html>
