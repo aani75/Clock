@@ -26,22 +26,23 @@
     <script src="/js/default.js"></script>
 </head>
 <body>
+    <p>Hello World</p>
     <script type="text/javascript">
 
         console.log("Subscribing...");
         document.addEventListener("deviceready", function () {
 
-            //navigator.notification.alert("The device is ready!");
-            canvas = document.getElementById('canvas');
-            ctx = canvas.getContext('2d');
+            navigator.notification.alert("The device is ready!");
+            //canvas = document.getElementById('canvas');
+            //ctx = canvas.getContext('2d');
 
-            // var width = canvas.width;
-            // var height = canvas.height;
+            //// var width = canvas.width;
+            //// var height = canvas.height;
 
-            clockImage = new Image();
-            clockImage.src = '/images/cface.png';
+            //clockImage = new Image();
+            //clockImage.src = '/images/cface.png';
 
-            setInterval(drawScene, 1000); // loop drawScene
+            //setInterval(drawScene, 1000); // loop drawScene
         });
 
         

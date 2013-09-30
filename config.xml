@@ -23,7 +23,7 @@
 
   <features>
     <feature name="Device">
-      <param name="wp-package" value="Device" onload="false"/>
+      <param name="wp-package" value="Device" onload="true"/>
     </feature>
     <feature name="Logger">
       <param name="wp-package" value="Logger"/>
